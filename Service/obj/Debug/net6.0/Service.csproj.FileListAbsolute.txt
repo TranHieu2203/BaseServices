@@ -1,0 +1,15 @@
+D:\S\BaseServices\Serviceư\bin\Debug\net6.0\Service.deps.json
+D:\S\BaseServices\Serviceư\bin\Debug\net6.0\Service.dll
+D:\S\BaseServices\Serviceư\bin\Debug\net6.0\Service.pdb
+D:\S\BaseServices\Serviceư\obj\Debug\net6.0\Service.csproj.AssemblyReference.cache
+D:\S\BaseServices\Serviceư\obj\Debug\net6.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\S\BaseServices\Serviceư\obj\Debug\net6.0\Service.AssemblyInfoInputs.cache
+D:\S\BaseServices\Serviceư\obj\Debug\net6.0\Service.AssemblyInfo.cs
+D:\S\BaseServices\Serviceư\obj\Debug\net6.0\Service.csproj.CoreCompileInputs.cache
+D:\S\BaseServices\Serviceư\obj\Debug\net6.0\Service.dll
+D:\S\BaseServices\Serviceư\obj\Debug\net6.0\refint\Service.dll
+D:\S\BaseServices\Serviceư\obj\Debug\net6.0\Service.pdb
+D:\S\BaseServices\Serviceư\obj\Debug\net6.0\ref\Service.dll
+D:\S\BaseServices\Serviceư\bin\Debug\net6.0\Core.dll
+D:\S\BaseServices\Serviceư\bin\Debug\net6.0\Core.pdb
+D:\S\BaseServices\Serviceư\obj\Debug\net6.0\Service.csproj.CopyComplete

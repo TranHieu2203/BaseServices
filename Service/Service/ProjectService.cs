@@ -2,6 +2,7 @@
 using Core.Entities;
 using Core.Interfaces;
 using Service.DTO;
+using Service.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Service.Service
 {
-    public class ProjectService
+    public class ProjectService: IProjectService
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;

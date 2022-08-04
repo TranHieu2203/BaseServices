@@ -9,6 +9,7 @@ namespace Core.Interfaces
 {
     public interface IProjectRepository : IGenericRepository<Project>
     {
+
     }
 
 }

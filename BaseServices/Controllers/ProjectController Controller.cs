@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Service.DTO;
-using Service.Service;
+using Service.Interface;
 namespace BaseServices.Controllers
 {
     [ApiVersion("1.0")]
@@ -10,9 +10,9 @@ namespace BaseServices.Controllers
 
     public class ProjectController : ControllerBase
     {
-        private readonly ProjectService _service;
+        private readonly IProjectService _service;
 
-        public ProjectController(ProjectService service)
+        public ProjectController(IProjectService service)
         {
             _service = service;
         }
@@ -30,8 +30,6 @@ namespace BaseServices.Controllers
             try
             {
                 await _service.InsertAsync(project);
-                await _service.CompletedAsync();
-
                 return "OK";
             }
             catch( Exception ex)

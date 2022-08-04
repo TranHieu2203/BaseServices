@@ -31,8 +31,8 @@
               "D:\\S\\BaseServices\\Infrastructure\\Infrastructure.csproj": {
                 "projectPath": "D:\\S\\BaseServices\\Infrastructure\\Infrastructure.csproj"
               },
-              "D:\\S\\BaseServices\\Serviceư\\Service.csproj": {
-                "projectPath": "D:\\S\\BaseServices\\Serviceư\\Service.csproj"
+              "D:\\S\\BaseServices\\Service\\Service.csproj": {
+                "projectPath": "D:\\S\\BaseServices\\Service\\Service.csproj"
               }
             }
           }
@@ -50,6 +50,10 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[11.0.1, )"
+            },
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             },
             "Microsoft.AspNetCore.Mvc.Versioning": {
               "target": "Package",
@@ -71,7 +75,7 @@
             },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
-              "version": "[1.14.0, )"
+              "version": "[1.16.1, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -236,14 +240,14 @@
         }
       }
     },
-    "D:\\S\\BaseServices\\Serviceư\\Service.csproj": {
+    "D:\\S\\BaseServices\\Service\\Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\S\\BaseServices\\Serviceư\\Service.csproj",
+        "projectUniqueName": "D:\\S\\BaseServices\\Service\\Service.csproj",
         "projectName": "Service",
-        "projectPath": "D:\\S\\BaseServices\\Serviceư\\Service.csproj",
+        "projectPath": "D:\\S\\BaseServices\\Service\\Service.csproj",
         "packagesPath": "C:\\Users\\mphob\\.nuget\\packages\\",
-        "outputPath": "D:\\S\\BaseServices\\Serviceư\\obj\\",
+        "outputPath": "D:\\S\\BaseServices\\Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mphob\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using Service.Automapper;
 using Service.Service;
 using Microsoft.Extensions.DependencyInjection;
+using Service.Interface;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,7 +22,8 @@ builder.Services.AddDbContext<PMSDbContext>(options =>
 
 
 builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
-builder.Services.AddTransient(typeof(ProjectService), typeof(ProjectService));
+builder.Services.AddTransient<IProjectService, ProjectService>();
+
 
 builder.Services.AddApiVersioning();
 var config = new MapperConfiguration(cfg =>

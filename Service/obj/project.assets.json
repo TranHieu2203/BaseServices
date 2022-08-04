@@ -138,11 +138,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\S\\BaseServices\\Serviceư\\Service.csproj",
+      "projectUniqueName": "D:\\S\\BaseServices\\Service\\Service.csproj",
       "projectName": "Service",
-      "projectPath": "D:\\S\\BaseServices\\Serviceư\\Service.csproj",
+      "projectPath": "D:\\S\\BaseServices\\Service\\Service.csproj",
       "packagesPath": "C:\\Users\\mphob\\.nuget\\packages\\",
-      "outputPath": "D:\\S\\BaseServices\\Serviceư\\obj\\",
+      "outputPath": "D:\\S\\BaseServices\\Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mphob\\AppData\\Roaming\\NuGet\\NuGet.Config",

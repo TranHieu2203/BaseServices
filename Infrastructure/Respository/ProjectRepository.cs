@@ -11,8 +11,17 @@ namespace Infrastructure.Respository
 {
     public class ProjectRepository : GenericRepository<Project>, IProjectRepository
     {
-        public ProjectRepository(PMSDbContext context, ILogger logger) : base(context, logger)
+        public ProjectRepository(BaseServicesContext context, ILogger logger) : base(context, logger)
         {
+           
+        }
+        public async Task<Project> FindByName(string name)
+        {
+            var obj = (from p in _context.Projects
+                       where p.Name == name
+                       select p);
+            return  obj.FirstOrDefault();
+            
         }
     }
 

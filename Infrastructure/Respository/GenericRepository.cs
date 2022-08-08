@@ -12,11 +12,11 @@ namespace Infrastructure.Respository
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
-        protected PMSDbContext _context;
+        protected BaseServicesContext _context;
         protected DbSet<T> dbSet;
         protected readonly ILogger _logger;
         public GenericRepository(
-            PMSDbContext context,
+            BaseServicesContext context,
             ILogger logger)
         {
             _context = context;

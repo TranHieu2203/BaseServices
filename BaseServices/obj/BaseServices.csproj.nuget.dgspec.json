@@ -47,6 +47,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "App.Metrics.AspNetCore": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "App.Metrics.AspNetCore.Tracking": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
             "AutoMapper": {
               "target": "Package",
               "version": "[11.0.1, )"
@@ -84,6 +92,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "prometheus-net.AspNetCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             }
           },
           "imports": [

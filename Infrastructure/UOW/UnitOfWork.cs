@@ -11,12 +11,12 @@ namespace Infrastructure.UOW
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly PMSDbContext _context;
+        private readonly BaseServicesContext _context;
         private readonly ILogger _logger;
         public IProjectRepository Projects { get; private set; }
 
     public UnitOfWork(
-        PMSDbContext context,
+        BaseServicesContext context,
         ILoggerFactory logger
         )
         {

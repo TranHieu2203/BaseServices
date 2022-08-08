@@ -9,7 +9,7 @@ namespace Core.Interfaces
 {
     public interface IProjectRepository : IGenericRepository<Project>
     {
-
+        Task<Project> FindByName(string name);
     }
 
 }

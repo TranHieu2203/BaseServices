@@ -7,8 +7,15 @@ using Service.Automapper;
 using Service.Service;
 using Microsoft.Extensions.DependencyInjection;
 using Service.Interface;
+using Autofac.Extensions.DependencyInjection;
+using Autofac;
+using BaseServices.DI;
+using BaseServices.Prometheus;
+using Prometheus;
 
 var builder = WebApplication.CreateBuilder(args);
+// init autofac services factory
+builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
 
 // Add services to the container.
 
@@ -17,15 +24,25 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<PMSDbContext>(options =>
+builder.Services.AddDbContext<BaseServicesContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'PMSDbContext' not found.")));
 
 
-builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
-builder.Services.AddTransient<IProjectService, ProjectService>();
+//builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
+//builder.Services.AddTransient<IProjectService, ProjectService>();
 
+// autofac container
+builder.Host.ConfigureContainer<ContainerBuilder>(builder => builder.RegisterModule(new RepositoryHandlerModule()));
+
+builder.Host.UseMetricsWebTracking();
 
 builder.Services.AddApiVersioning();
+
+builder.Services.AddSingleton<MetricReporter>();
+builder.Services.AddMetrics();
+builder.Services.AddMetricsTrackingMiddleware();
+
+
 var config = new MapperConfiguration(cfg =>
 {
     cfg.AddProfile(new AutoMapperProfile());
@@ -34,8 +51,6 @@ var config = new MapperConfiguration(cfg =>
 var mapper = config.CreateMapper();
 
 builder.Services.AddSingleton(mapper);
-
-
 
 var app = builder.Build();
 
@@ -47,6 +62,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseAuthorization();
+
+app.UseMetricServer();
+app.UseMiddleware<ResponseMetricMiddleware>();
 
 app.MapControllers();
 

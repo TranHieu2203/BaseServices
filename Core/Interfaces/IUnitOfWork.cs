@@ -9,6 +9,7 @@ namespace Core.Interfaces
     public interface IUnitOfWork : IDisposable
     {
         IProjectRepository Projects { get; }
+        ICustommerReponsitory Custommers { get; }
         Task<int> CompletedAsync();
     }
 

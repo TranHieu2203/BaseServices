@@ -1,38 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "D:\\S\\BaseServices\\BaseServices\\BaseServices.csproj": {}
+    "/Users/dangth/Desktop/APITVCDEMO/BaseServices/BaseServices/BaseServices.csproj": {}
   },
   "projects": {
-    "D:\\S\\BaseServices\\BaseServices\\BaseServices.csproj": {
+    "/Users/dangth/Desktop/APITVCDEMO/BaseServices/BaseServices/BaseServices.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\S\\BaseServices\\BaseServices\\BaseServices.csproj",
+        "projectUniqueName": "/Users/dangth/Desktop/APITVCDEMO/BaseServices/BaseServices/BaseServices.csproj",
         "projectName": "BaseServices",
-        "projectPath": "D:\\S\\BaseServices\\BaseServices\\BaseServices.csproj",
-        "packagesPath": "C:\\Users\\mphob\\.nuget\\packages\\",
-        "outputPath": "D:\\S\\BaseServices\\BaseServices\\obj\\",
+        "projectPath": "/Users/dangth/Desktop/APITVCDEMO/BaseServices/BaseServices/BaseServices.csproj",
+        "packagesPath": "/Users/dangth/.nuget/packages/",
+        "outputPath": "/Users/dangth/Desktop/APITVCDEMO/BaseServices/BaseServices/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mphob\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/dangth/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\S\\BaseServices\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "D:\\S\\BaseServices\\Infrastructure\\Infrastructure.csproj"
+              "/Users/dangth/Desktop/APITVCDEMO/BaseServices/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/Users/dangth/Desktop/APITVCDEMO/BaseServices/Infrastructure/Infrastructure.csproj"
               },
-              "D:\\S\\BaseServices\\Service\\Service.csproj": {
-                "projectPath": "D:\\S\\BaseServices\\Service\\Service.csproj"
+              "/Users/dangth/Desktop/APITVCDEMO/BaseServices/Service/Service.csproj": {
+                "projectPath": "/Users/dangth/Desktop/APITVCDEMO/BaseServices/Service/Service.csproj"
               }
             }
           }
@@ -58,6 +56,10 @@
             "Microsoft.AspNetCore.Mvc.Versioning": {
               "target": "Package",
               "version": "[5.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -104,28 +106,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\S\\BaseServices\\Core\\Core.csproj": {
+    "/Users/dangth/Desktop/APITVCDEMO/BaseServices/Core/Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\S\\BaseServices\\Core\\Core.csproj",
+        "projectUniqueName": "/Users/dangth/Desktop/APITVCDEMO/BaseServices/Core/Core.csproj",
         "projectName": "Core",
-        "projectPath": "D:\\S\\BaseServices\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\mphob\\.nuget\\packages\\",
-        "outputPath": "D:\\S\\BaseServices\\Core\\obj\\",
+        "projectPath": "/Users/dangth/Desktop/APITVCDEMO/BaseServices/Core/Core.csproj",
+        "packagesPath": "/Users/dangth/.nuget/packages/",
+        "outputPath": "/Users/dangth/Desktop/APITVCDEMO/BaseServices/Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mphob\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/dangth/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -143,6 +143,18 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Migrator.EF6.Tools": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -158,36 +170,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\S\\BaseServices\\Infrastructure\\Infrastructure.csproj": {
+    "/Users/dangth/Desktop/APITVCDEMO/BaseServices/Infrastructure/Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\S\\BaseServices\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "/Users/dangth/Desktop/APITVCDEMO/BaseServices/Infrastructure/Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "D:\\S\\BaseServices\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\mphob\\.nuget\\packages\\",
-        "outputPath": "D:\\S\\BaseServices\\Infrastructure\\obj\\",
+        "projectPath": "/Users/dangth/Desktop/APITVCDEMO/BaseServices/Infrastructure/Infrastructure.csproj",
+        "packagesPath": "/Users/dangth/.nuget/packages/",
+        "outputPath": "/Users/dangth/Desktop/APITVCDEMO/BaseServices/Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mphob\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/dangth/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\S\\BaseServices\\Core\\Core.csproj": {
-                "projectPath": "D:\\S\\BaseServices\\Core\\Core.csproj"
+              "/Users/dangth/Desktop/APITVCDEMO/BaseServices/Core/Core.csproj": {
+                "projectPath": "/Users/dangth/Desktop/APITVCDEMO/BaseServices/Core/Core.csproj"
               }
             }
           }
@@ -203,6 +213,12 @@
           "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.7, )"
             },
@@ -236,36 +252,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\S\\BaseServices\\Service\\Service.csproj": {
+    "/Users/dangth/Desktop/APITVCDEMO/BaseServices/Service/Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\S\\BaseServices\\Service\\Service.csproj",
+        "projectUniqueName": "/Users/dangth/Desktop/APITVCDEMO/BaseServices/Service/Service.csproj",
         "projectName": "Service",
-        "projectPath": "D:\\S\\BaseServices\\Service\\Service.csproj",
-        "packagesPath": "C:\\Users\\mphob\\.nuget\\packages\\",
-        "outputPath": "D:\\S\\BaseServices\\Service\\obj\\",
+        "projectPath": "/Users/dangth/Desktop/APITVCDEMO/BaseServices/Service/Service.csproj",
+        "packagesPath": "/Users/dangth/.nuget/packages/",
+        "outputPath": "/Users/dangth/Desktop/APITVCDEMO/BaseServices/Service/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mphob\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/dangth/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\S\\BaseServices\\Core\\Core.csproj": {
-                "projectPath": "D:\\S\\BaseServices\\Core\\Core.csproj"
+              "/Users/dangth/Desktop/APITVCDEMO/BaseServices/Core/Core.csproj": {
+                "projectPath": "/Users/dangth/Desktop/APITVCDEMO/BaseServices/Core/Core.csproj"
               }
             }
           }
@@ -283,6 +297,12 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[11.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.7, )"
             }
           },
           "imports": [
@@ -300,7 +320,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.302/RuntimeIdentifierGraph.json"
         }
       }
     }

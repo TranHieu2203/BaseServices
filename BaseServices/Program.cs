@@ -23,6 +23,7 @@ builder.Services.AddDbContext<PMSDbContext>(options =>
 
 builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
 builder.Services.AddTransient<IProjectService, ProjectService>();
+builder.Services.AddTransient<ICustommerService, CustommerService>();
 
 
 builder.Services.AddApiVersioning();

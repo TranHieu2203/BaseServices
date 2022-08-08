@@ -20,7 +20,7 @@ namespace BaseServices.Controllers
         [HttpGet]
         public async Task<string> GetAll()
         {
-            var s = await  _service.GetProjectAsync();
+            var s = await _service.GetProjectAsync();
             return JsonConvert.SerializeObject(s);
         }
 
@@ -32,7 +32,7 @@ namespace BaseServices.Controllers
                 await _service.InsertAsync(project);
                 return "OK";
             }
-            catch( Exception ex)
+            catch (Exception ex)
             {
                 return "DDEOS";
             }

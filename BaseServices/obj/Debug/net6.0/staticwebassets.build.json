@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "8coyvew71dsFJ8x3AYmom7HfvaaD3Cjwf4umx/xco/c=",
-  "Source": "BaseServices",
-  "BasePath": "_content/BaseServices",
+  "Hash": "jk8vJb9LOKti5LM8OjBTg/c38U/N1jC+bQV7ac7treA=",
+  "Source": "Base.API",
+  "BasePath": "_content/Base.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

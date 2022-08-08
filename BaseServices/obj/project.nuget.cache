@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mc09YTG/N0vtCWjAztKN6Q7jmBvIsgEkn0YIc+nfYNZI1Z8RywBFglYPSjg35+Js7un77aQhzERS/IGhUMgz2w==",
+  "dgSpecHash": "Cu+oWA1MWRK4Fgr1uZJeG9mnmMM8Oad7zSoIKIQMkEwQTplRKHqMgGjxGHOZOvJ1Xa87tjPCeLn7f920ml5oKA==",
   "success": true,
-  "projectFilePath": "D:\\S\\BaseServices\\BaseServices\\BaseServices.csproj",
+  "projectFilePath": "D:\\S\\BaseServices\\BaseServices\\Base.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mphob\\.nuget\\packages\\app.metrics\\4.3.0\\app.metrics.4.3.0.nupkg.sha512",
     "C:\\Users\\mphob\\.nuget\\packages\\app.metrics.abstractions\\4.3.0\\app.metrics.abstractions.4.3.0.nupkg.sha512",

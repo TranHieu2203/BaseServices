@@ -3,18 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseServices", "BaseServices.csproj", "{02480572-4111-4387-BF88-64D7AFFEF5F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Base.API", "Base.API.csproj", "{02480572-4111-4387-BF88-64D7AFFEF5F5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "..\Core\Core.csproj", "{CC9F4499-4AB9-444B-B9B2-1790A0B261D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Base.Core", "..\Core\Base.Core.csproj", "{CC9F4499-4AB9-444B-B9B2-1790A0B261D3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "..\Infrastructure\Infrastructure.csproj", "{CE0BD43F-9364-4B31-BA61-7EA52FC9499B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Base.Infrastructure", "..\Infrastructure\Base.Infrastructure.csproj", "{CE0BD43F-9364-4B31-BA61-7EA52FC9499B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Service", "..\Service\Service.csproj", "{EFD8853A-F9A8-4895-AD8F-5C5E6CC23C3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Base.Service", "..\Service\Base.Service.csproj", "{EFD8853A-F9A8-4895-AD8F-5C5E6CC23C3B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7BA4D2DC-C13B-4149-8BE5-723A24243528}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Base.Common", "..\BaseCommon\Base.Common.csproj", "{0C8FB254-6444-4A6F-A1C7-6CA91B699333}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Base.DataContractCore", "..\Base.DataContractCore\Base.DataContractCore.csproj", "{669250C2-B844-40B4-A07E-DF4F52342C6D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +42,14 @@ Global
 		{EFD8853A-F9A8-4895-AD8F-5C5E6CC23C3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFD8853A-F9A8-4895-AD8F-5C5E6CC23C3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFD8853A-F9A8-4895-AD8F-5C5E6CC23C3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C8FB254-6444-4A6F-A1C7-6CA91B699333}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C8FB254-6444-4A6F-A1C7-6CA91B699333}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C8FB254-6444-4A6F-A1C7-6CA91B699333}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C8FB254-6444-4A6F-A1C7-6CA91B699333}.Release|Any CPU.Build.0 = Release|Any CPU
+		{669250C2-B844-40B4-A07E-DF4F52342C6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{669250C2-B844-40B4-A07E-DF4F52342C6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{669250C2-B844-40B4-A07E-DF4F52342C6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{669250C2-B844-40B4-A07E-DF4F52342C6D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

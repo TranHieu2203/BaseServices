@@ -23,14 +23,14 @@
           "lib/netcoreapp2.0/_._": {}
         }
       },
-      "Core/1.0.0": {
+      "Base.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/Core.dll": {}
+          "bin/placeholder/Base.Core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Core.dll": {}
+          "bin/placeholder/Base.Core.dll": {}
         }
       }
     }
@@ -120,16 +120,16 @@
         "version.txt"
       ]
     },
-    "Core/1.0.0": {
+    "Base.Core/1.0.0": {
       "type": "project",
-      "path": "../Core/Core.csproj",
-      "msbuildProject": "../Core/Core.csproj"
+      "path": "../Core/Base.Core.csproj",
+      "msbuildProject": "../Core/Base.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "AutoMapper >= 11.0.1",
-      "Core >= 1.0.0"
+      "Base.Core >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -138,9 +138,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\S\\BaseServices\\Service\\Service.csproj",
-      "projectName": "Service",
-      "projectPath": "D:\\S\\BaseServices\\Service\\Service.csproj",
+      "projectUniqueName": "D:\\S\\BaseServices\\Service\\Base.Service.csproj",
+      "projectName": "Base.Service",
+      "projectPath": "D:\\S\\BaseServices\\Service\\Base.Service.csproj",
       "packagesPath": "C:\\Users\\mphob\\.nuget\\packages\\",
       "outputPath": "D:\\S\\BaseServices\\Service\\obj\\",
       "projectStyle": "PackageReference",
@@ -159,8 +159,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\S\\BaseServices\\Core\\Core.csproj": {
-              "projectPath": "D:\\S\\BaseServices\\Core\\Core.csproj"
+            "D:\\S\\BaseServices\\Core\\Base.Core.csproj": {
+              "projectPath": "D:\\S\\BaseServices\\Core\\Base.Core.csproj"
             }
           }
         }

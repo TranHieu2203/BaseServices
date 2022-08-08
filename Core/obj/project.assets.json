@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\S\\BaseServices\\Core\\Core.csproj",
-      "projectName": "Core",
-      "projectPath": "D:\\S\\BaseServices\\Core\\Core.csproj",
+      "projectUniqueName": "D:\\S\\BaseServices\\Core\\Base.Core.csproj",
+      "projectName": "Base.Core",
+      "projectPath": "D:\\S\\BaseServices\\Core\\Base.Core.csproj",
       "packagesPath": "C:\\Users\\mphob\\.nuget\\packages\\",
       "outputPath": "D:\\S\\BaseServices\\Core\\obj\\",
       "projectStyle": "PackageReference",

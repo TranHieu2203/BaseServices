@@ -635,14 +635,14 @@
           }
         }
       },
-      "Core/1.0.0": {
+      "Base.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/Core.dll": {}
+          "bin/placeholder/Base.Core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Core.dll": {}
+          "bin/placeholder/Base.Core.dll": {}
         }
       }
     }
@@ -1865,15 +1865,15 @@
         "version.txt"
       ]
     },
-    "Core/1.0.0": {
+    "Base.Core/1.0.0": {
       "type": "project",
-      "path": "../Core/Core.csproj",
-      "msbuildProject": "../Core/Core.csproj"
+      "path": "../Core/Base.Core.csproj",
+      "msbuildProject": "../Core/Base.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Core >= 1.0.0",
+      "Base.Core >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.7",
       "Microsoft.EntityFrameworkCore.Relational >= 6.0.7",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.7",
@@ -1886,9 +1886,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\S\\BaseServices\\Infrastructure\\Infrastructure.csproj",
-      "projectName": "Infrastructure",
-      "projectPath": "D:\\S\\BaseServices\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "D:\\S\\BaseServices\\Infrastructure\\Base.Infrastructure.csproj",
+      "projectName": "Base.Infrastructure",
+      "projectPath": "D:\\S\\BaseServices\\Infrastructure\\Base.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\mphob\\.nuget\\packages\\",
       "outputPath": "D:\\S\\BaseServices\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
@@ -1907,8 +1907,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\S\\BaseServices\\Core\\Core.csproj": {
-              "projectPath": "D:\\S\\BaseServices\\Core\\Core.csproj"
+            "D:\\S\\BaseServices\\Core\\Base.Core.csproj": {
+              "projectPath": "D:\\S\\BaseServices\\Core\\Base.Core.csproj"
             }
           }
         }

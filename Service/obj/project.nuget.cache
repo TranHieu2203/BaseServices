@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "upUW5HFrbj8lf1o0HK57y/1Sk0c4KOaEavDZhoul+4jCAVmG1R8edeIhifuFjRmUrj+3e7CKdl9ov2dHM30SHw==",
+  "dgSpecHash": "sppx/lkounlNMYYPixNKPf3jHVicbZMDHFBHt7c2D0r7UKi18zH8XJ300McnITz/sVDgFyM3DIWhhGMT4cT4QQ==",
   "success": true,
-  "projectFilePath": "D:\\S\\BaseServices\\Service\\Service.csproj",
+  "projectFilePath": "D:\\S\\BaseServices\\Service\\Base.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mphob\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\mphob\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"

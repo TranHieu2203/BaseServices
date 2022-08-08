@@ -1,0 +1,17 @@
+D:\S\BaseServices\Infrastructure\bin\Debug\net6.0\Base.Infrastructure.deps.json
+D:\S\BaseServices\Infrastructure\bin\Debug\net6.0\Base.Infrastructure.runtimeconfig.json
+D:\S\BaseServices\Infrastructure\bin\Debug\net6.0\Base.Infrastructure.dll
+D:\S\BaseServices\Infrastructure\bin\Debug\net6.0\Base.Infrastructure.pdb
+D:\S\BaseServices\Infrastructure\bin\Debug\net6.0\Base.Core.dll
+D:\S\BaseServices\Infrastructure\bin\Debug\net6.0\Base.Core.pdb
+D:\S\BaseServices\Infrastructure\obj\Debug\net6.0\Base.Infrastructure.csproj.AssemblyReference.cache
+D:\S\BaseServices\Infrastructure\obj\Debug\net6.0\Base.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\S\BaseServices\Infrastructure\obj\Debug\net6.0\Base.Infrastructure.AssemblyInfoInputs.cache
+D:\S\BaseServices\Infrastructure\obj\Debug\net6.0\Base.Infrastructure.AssemblyInfo.cs
+D:\S\BaseServices\Infrastructure\obj\Debug\net6.0\Base.Infrastructure.csproj.CoreCompileInputs.cache
+D:\S\BaseServices\Infrastructure\obj\Debug\net6.0\Base.Infrastructure.csproj.CopyComplete
+D:\S\BaseServices\Infrastructure\obj\Debug\net6.0\Base.Infrastructure.dll
+D:\S\BaseServices\Infrastructure\obj\Debug\net6.0\refint\Base.Infrastructure.dll
+D:\S\BaseServices\Infrastructure\obj\Debug\net6.0\Base.Infrastructure.pdb
+D:\S\BaseServices\Infrastructure\obj\Debug\net6.0\Base.Infrastructure.genruntimeconfig.cache
+D:\S\BaseServices\Infrastructure\obj\Debug\net6.0\ref\Base.Infrastructure.dll

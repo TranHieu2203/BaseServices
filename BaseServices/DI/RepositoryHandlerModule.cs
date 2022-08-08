@@ -18,10 +18,10 @@ namespace BaseServices.DI
 
             builder.RegisterType<UnitOfWork>().As<IUnitOfWork>().SingleInstance();
 
+
+            // Sau khi thêm mới services và interface thì khai báo để sử dụng
             builder.RegisterType<ProjectService>().As<IProjectService>().InstancePerLifetimeScope();
             builder.RegisterType<CustommerService>().As<ICustommerService>().InstancePerLifetimeScope();
-
-
         }
     }
 }

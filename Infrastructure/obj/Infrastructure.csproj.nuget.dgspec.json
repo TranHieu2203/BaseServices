@@ -4,12 +4,12 @@
     "D:\\S\\BaseServices\\Infrastructure\\Infrastructure.csproj": {}
   },
   "projects": {
-    "D:\\S\\BaseServices\\Core\\Core.csproj": {
+    "D:\\S\\BaseServices\\Core\\Base.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\S\\BaseServices\\Core\\Core.csproj",
-        "projectName": "Core",
-        "projectPath": "D:\\S\\BaseServices\\Core\\Core.csproj",
+        "projectUniqueName": "D:\\S\\BaseServices\\Core\\Base.DAL.csproj",
+        "projectName": "Base.DAL",
+        "projectPath": "D:\\S\\BaseServices\\Core\\Base.DAL.csproj",
         "packagesPath": "C:\\Users\\mphob\\.nuget\\packages\\",
         "outputPath": "D:\\S\\BaseServices\\Core\\obj\\",
         "projectStyle": "PackageReference",
@@ -82,8 +82,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\S\\BaseServices\\Core\\Core.csproj": {
-                "projectPath": "D:\\S\\BaseServices\\Core\\Core.csproj"
+              "D:\\S\\BaseServices\\Core\\Base.DAL.csproj": {
+                "projectPath": "D:\\S\\BaseServices\\Core\\Base.DAL.csproj"
               }
             }
           }

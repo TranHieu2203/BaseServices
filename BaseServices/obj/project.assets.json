@@ -1075,44 +1075,44 @@
           }
         }
       },
-      "Core/1.0.0": {
+      "Base.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
-          "bin/placeholder/Core.dll": {}
+          "bin/placeholder/Base.Core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Core.dll": {}
+          "bin/placeholder/Base.Core.dll": {}
         }
       },
-      "Infrastructure/1.0.0": {
+      "Base.Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Core": "1.0.0",
+          "Base.Core": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.7",
           "Microsoft.EntityFrameworkCore.Relational": "6.0.7",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.7"
         },
         "compile": {
-          "bin/placeholder/Infrastructure.dll": {}
+          "bin/placeholder/Base.Infrastructure.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Infrastructure.dll": {}
+          "bin/placeholder/Base.Infrastructure.dll": {}
         }
       },
-      "Service/1.0.0": {
+      "Base.Service/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "AutoMapper": "11.0.1",
-          "Core": "1.0.0"
+          "Base.Core": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/Service.dll": {}
+          "bin/placeholder/Base.Service.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Service.dll": {}
+          "bin/placeholder/Base.Service.dll": {}
         }
       }
     }
@@ -3061,20 +3061,20 @@
         "version.txt"
       ]
     },
-    "Core/1.0.0": {
+    "Base.Core/1.0.0": {
       "type": "project",
-      "path": "../Core/Core.csproj",
-      "msbuildProject": "../Core/Core.csproj"
+      "path": "../Core/Base.Core.csproj",
+      "msbuildProject": "../Core/Base.Core.csproj"
     },
-    "Infrastructure/1.0.0": {
+    "Base.Infrastructure/1.0.0": {
       "type": "project",
-      "path": "../Infrastructure/Infrastructure.csproj",
-      "msbuildProject": "../Infrastructure/Infrastructure.csproj"
+      "path": "../Infrastructure/Base.Infrastructure.csproj",
+      "msbuildProject": "../Infrastructure/Base.Infrastructure.csproj"
     },
-    "Service/1.0.0": {
+    "Base.Service/1.0.0": {
       "type": "project",
-      "path": "../Service/Service.csproj",
-      "msbuildProject": "../Service/Service.csproj"
+      "path": "../Service/Base.Service.csproj",
+      "msbuildProject": "../Service/Base.Service.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3083,14 +3083,14 @@
       "App.Metrics.AspNetCore.Tracking >= 4.3.0",
       "AutoMapper >= 11.0.1",
       "Autofac.Extensions.DependencyInjection >= 8.0.0",
-      "Infrastructure >= 1.0.0",
+      "Base.Infrastructure >= 1.0.0",
+      "Base.Service >= 1.0.0",
       "Microsoft.AspNetCore.Mvc.Versioning >= 5.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.7",
       "Microsoft.EntityFrameworkCore.InMemory >= 6.0.7",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.7",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.16.1",
       "Newtonsoft.Json >= 13.0.1",
-      "Service >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3",
       "prometheus-net.AspNetCore >= 6.0.0"
     ]
@@ -3101,9 +3101,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\S\\BaseServices\\BaseServices\\BaseServices.csproj",
-      "projectName": "BaseServices",
-      "projectPath": "D:\\S\\BaseServices\\BaseServices\\BaseServices.csproj",
+      "projectUniqueName": "D:\\S\\BaseServices\\BaseServices\\Base.API.csproj",
+      "projectName": "Base.API",
+      "projectPath": "D:\\S\\BaseServices\\BaseServices\\Base.API.csproj",
       "packagesPath": "C:\\Users\\mphob\\.nuget\\packages\\",
       "outputPath": "D:\\S\\BaseServices\\BaseServices\\obj\\",
       "projectStyle": "PackageReference",
@@ -3122,11 +3122,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\S\\BaseServices\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "D:\\S\\BaseServices\\Infrastructure\\Infrastructure.csproj"
+            "D:\\S\\BaseServices\\Infrastructure\\Base.Infrastructure.csproj": {
+              "projectPath": "D:\\S\\BaseServices\\Infrastructure\\Base.Infrastructure.csproj"
             },
-            "D:\\S\\BaseServices\\Service\\Service.csproj": {
-              "projectPath": "D:\\S\\BaseServices\\Service\\Service.csproj"
+            "D:\\S\\BaseServices\\Service\\Base.Service.csproj": {
+              "projectPath": "D:\\S\\BaseServices\\Service\\Base.Service.csproj"
             }
           }
         }

@@ -14,19 +14,20 @@ namespace Infrastructure.UOW
         private readonly BaseServicesContext _context;
         private readonly ILogger _logger;
         public IProjectRepository Projects { get; private set; }
+        public ICustommerReponsitory Custommers { get; private set; }
 
-    public UnitOfWork(
-        BaseServicesContext context,
-        ILoggerFactory logger
-        )
+
+        public UnitOfWork(BaseServicesContext context,ILoggerFactory logger)
         {
             _context = context;
             _logger = logger.CreateLogger("logs");
 
-        Projects = new ProjectRepository(_context, _logger);
+            Projects = new ProjectRepository(_context, _logger);
+            Custommers = new CustommerRepository(_context, _logger);
+
         }
 
-    public async Task<int> CompletedAsync()
+        public async Task<int> CompletedAsync()
         {
             return await _context.SaveChangesAsync();
         }

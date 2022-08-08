@@ -13,6 +13,8 @@ namespace Service.Automapper
         public AutoMapperProfile()
         {
             CreateMap<ProjectDTO, Project>().ReverseMap();
+            CreateMap<CustommerDTO, Custommer>().ReverseMap();
+
         }
     }
 

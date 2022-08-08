@@ -11,7 +11,7 @@ namespace Infrastructure.Respository
 {
     public class CustommerRepository : GenericRepository<Custommer>, ICustommerReponsitory
     {
-        public CustommerRepository(PMSDbContext context, ILogger logger) : base(context, logger)
+        public CustommerRepository(BaseServicesContext context, ILogger logger) : base(context, logger)
         {
         }
     }

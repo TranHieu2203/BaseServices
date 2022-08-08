@@ -18,6 +18,12 @@ namespace Infrastructure.Respository
         }
         public virtual DbSet<Project> Projects { get; set; }
         public virtual DbSet<Custommer> Custommers { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Project>().ToTable(nameof(Projects), t => t.ExcludeFromMigrations());
+            modelBuilder.Entity<Custommer>().ToTable(nameof(Custommers), t => t.ExcludeFromMigrations());
+
+        }
 
     }
 }

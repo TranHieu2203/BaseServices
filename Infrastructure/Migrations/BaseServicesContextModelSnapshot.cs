@@ -51,7 +51,7 @@ namespace Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Custommers");
+                    b.ToTable("Custommers", null, t => t.ExcludeFromMigrations());
                 });
 
             modelBuilder.Entity("Core.Entities.Project", b =>
@@ -72,7 +72,7 @@ namespace Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Projects");
+                    b.ToTable("Projects", null, t => t.ExcludeFromMigrations());
                 });
 #pragma warning restore 612, 618
         }

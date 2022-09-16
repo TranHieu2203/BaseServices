@@ -1,5 +1,5 @@
 ﻿using Autofac;
-using Core.Interfaces;
+using Infrastructure.Interfaces;
 using Infrastructure.UOW;
 using Service.Interface;
 using Service.Service;
@@ -20,8 +20,9 @@ namespace BaseServices.DI
 
 
             // Sau khi thêm mới services và interface thì khai báo để sử dụng
-            builder.RegisterType<ProjectService>().As<IProjectService>().InstancePerLifetimeScope();
             builder.RegisterType<CustommerService>().As<ICustommerService>().InstancePerLifetimeScope();
+            builder.RegisterType<SeUserService>().As<ISeUserService>().InstancePerLifetimeScope();
+
         }
     }
 }

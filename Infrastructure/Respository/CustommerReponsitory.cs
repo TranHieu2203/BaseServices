@@ -1,5 +1,5 @@
 using Core.Entities;
-using Core.Interfaces;
+using Infrastructure.Interfaces;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -13,6 +13,7 @@ namespace Infrastructure.Respository
     {
         public CustommerRepository(BaseServicesContext context, ILogger logger) : base(context, logger)
         {
+
         }
     }
 

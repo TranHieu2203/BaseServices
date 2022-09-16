@@ -804,7 +804,8 @@
       "Base.Service/1.0.0": {
         "dependencies": {
           "AutoMapper": "11.0.1",
-          "Base.Core": "1.0.0"
+          "Base.Core": "1.0.0",
+          "Base.Infrastructure": "1.0.0"
         },
         "runtime": {
           "Base.Service.dll": {}

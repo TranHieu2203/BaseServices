@@ -9,6 +9,7 @@ namespace Base.DataContractCore.Base
         public int PAGE_SIZE { set; get; }
         public int? ACTFLG { set; get; }
         public IList<BaseFilter>? FILTER { get; set; }
+        public string SORT { set; get; }
         public RequestBaseList()
         {
             KEYWORD = "";

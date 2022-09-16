@@ -53,9 +53,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\S\\BaseServices\\Base.DataContractCore\\Base.DataContractCore.csproj",
-      "projectName": "Base.DataContractCore",
-      "projectPath": "D:\\S\\BaseServices\\Base.DataContractCore\\Base.DataContractCore.csproj",
+      "projectUniqueName": "D:\\S\\BaseServices\\Base.DataContractCore\\4.Base.DataContractCore.csproj",
+      "projectName": "4.Base.DataContractCore",
+      "projectPath": "D:\\S\\BaseServices\\Base.DataContractCore\\4.Base.DataContractCore.csproj",
       "packagesPath": "C:\\Users\\mphob\\.nuget\\packages\\",
       "outputPath": "D:\\S\\BaseServices\\Base.DataContractCore\\obj\\",
       "projectStyle": "PackageReference",

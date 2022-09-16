@@ -10,6 +10,7 @@
         /// <summary>
         /// init default
         /// </summary>
+        /// 
         public DataSettings()
         {
             DateTimeFormat = "yyyy/MM/dd HH:mm:ss";

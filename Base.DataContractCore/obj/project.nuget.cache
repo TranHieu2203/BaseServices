@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2+TCLa0UZgJlgX1RWlHAY0jJM779jgkONLjQ3EaISclOPIUUN5eKTF006Ps72LvABVRP8zLY21GTWRjB48HXPw==",
+  "dgSpecHash": "riO2XgrbqmLpTJKrMpkIqVpI7+l9OHwdqBdg8bGJ9UgLT7jXkFaIKzQKzGDNqHdme+ifz2cZTC2pj7gZ7mfNcA==",
   "success": true,
-  "projectFilePath": "D:\\S\\BaseServices\\Base.DataContractCore\\Base.DataContractCore.csproj",
+  "projectFilePath": "D:\\S\\BaseServices\\Base.DataContractCore\\4.Base.DataContractCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mphob\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],

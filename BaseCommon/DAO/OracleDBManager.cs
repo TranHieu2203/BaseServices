@@ -140,7 +140,6 @@ namespace Base.Common.DAO
 
             using OracleConnection Conn = new OracleConnection(ConnectString);
             Conn.Open();
-            //init structure (require table name must have primary key)
             cmd = new OracleCommand()
             {
                 CommandText = "select * from " + tbName + " where (1=0)",
@@ -163,7 +162,6 @@ namespace Base.Common.DAO
             }
             catch (Exception e)
             {
-                //LogHelper.WriteExceptionToLog(String.Format("errorString: {0}\ne: {1}", e.Message, e.ToString()));
                 throw new BaseDatabaseException("UpdateTable:" + e.Message, e);
             }
         }
@@ -435,7 +433,7 @@ namespace Base.Common.DAO
         /// </summary>
         /// <param name="cmd"></param>
         /// <returns></returns>
-        private async Task<DataTable> GetDataTableAsync(string cmd)
+        private async Task<DataTable?> GetDataTableAsync(string cmd)
         {
             _command = new OracleCommand(cmd)
             {

@@ -500,17 +500,17 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Base.DataContractCore/1.0.0": {
+      "4.Base.DataContractCore/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1"
         },
         "compile": {
-          "bin/placeholder/Base.DataContractCore.dll": {}
+          "bin/placeholder/4.Base.DataContractCore.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Base.DataContractCore.dll": {}
+          "bin/placeholder/4.Base.DataContractCore.dll": {}
         }
       }
     }
@@ -1614,15 +1614,15 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Base.DataContractCore/1.0.0": {
+    "4.Base.DataContractCore/1.0.0": {
       "type": "project",
-      "path": "../Base.DataContractCore/Base.DataContractCore.csproj",
-      "msbuildProject": "../Base.DataContractCore/Base.DataContractCore.csproj"
+      "path": "../Base.DataContractCore/4.Base.DataContractCore.csproj",
+      "msbuildProject": "../Base.DataContractCore/4.Base.DataContractCore.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Base.DataContractCore >= 1.0.0",
+      "4.Base.DataContractCore >= 1.0.0",
       "Microsoft.AspNetCore.Authorization >= 6.0.7",
       "Microsoft.AspNetCore.Mvc.Abstractions >= 2.2.0",
       "Microsoft.IdentityModel.Tokens >= 6.22.0",
@@ -1640,9 +1640,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\S\\BaseServices\\BaseCommon\\Base.Common.csproj",
-      "projectName": "Base.Common",
-      "projectPath": "D:\\S\\BaseServices\\BaseCommon\\Base.Common.csproj",
+      "projectUniqueName": "D:\\S\\BaseServices\\BaseCommon\\5.Base.Common.csproj",
+      "projectName": "5.Base.Common",
+      "projectPath": "D:\\S\\BaseServices\\BaseCommon\\5.Base.Common.csproj",
       "packagesPath": "C:\\Users\\mphob\\.nuget\\packages\\",
       "outputPath": "D:\\S\\BaseServices\\BaseCommon\\obj\\",
       "projectStyle": "PackageReference",
@@ -1661,8 +1661,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\S\\BaseServices\\Base.DataContractCore\\Base.DataContractCore.csproj": {
-              "projectPath": "D:\\S\\BaseServices\\Base.DataContractCore\\Base.DataContractCore.csproj"
+            "D:\\S\\BaseServices\\Base.DataContractCore\\4.Base.DataContractCore.csproj": {
+              "projectPath": "D:\\S\\BaseServices\\Base.DataContractCore\\4.Base.DataContractCore.csproj"
             }
           }
         }

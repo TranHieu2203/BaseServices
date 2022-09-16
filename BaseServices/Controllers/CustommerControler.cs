@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using Service.DTO;
+using Core.DTO;
 using Service.Interface;
 namespace BaseServices.Controllers
 {

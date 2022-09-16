@@ -1,4 +1,4 @@
-﻿using Core.Interfaces;
+﻿using Infrastructure.Interfaces;
 using Infrastructure.Respository;
 using Microsoft.Extensions.Logging;
 using System;
@@ -13,8 +13,8 @@ namespace Infrastructure.UOW
     {
         private readonly BaseServicesContext _context;
         private readonly ILogger _logger;
-        public IProjectRepository Projects { get; private set; }
         public ICustommerReponsitory Custommers { get; private set; }
+        public ISeUserReponsitory SeUsers { get; private set; }
 
 
         public UnitOfWork(BaseServicesContext context,ILoggerFactory logger)
@@ -22,8 +22,9 @@ namespace Infrastructure.UOW
             _context = context;
             _logger = logger.CreateLogger("logs");
 
-            Projects = new ProjectRepository(_context, _logger);
             Custommers = new CustommerRepository(_context, _logger);
+            SeUsers = new SeUserReponsitory(_context, _logger);
+
 
         }
 

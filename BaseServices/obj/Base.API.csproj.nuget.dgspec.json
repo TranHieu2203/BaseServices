@@ -4,6 +4,66 @@
     "D:\\S\\BaseServices\\BaseServices\\Base.API.csproj": {}
   },
   "projects": {
+    "D:\\S\\BaseServices\\Base.DataContractCore\\4.Base.DataContractCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\S\\BaseServices\\Base.DataContractCore\\4.Base.DataContractCore.csproj",
+        "projectName": "4.Base.DataContractCore",
+        "projectPath": "D:\\S\\BaseServices\\Base.DataContractCore\\4.Base.DataContractCore.csproj",
+        "packagesPath": "C:\\Users\\mphob\\.nuget\\packages\\",
+        "outputPath": "D:\\S\\BaseServices\\Base.DataContractCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\mphob\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "D:\\S\\BaseServices\\BaseServices\\Base.API.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -28,11 +88,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\S\\BaseServices\\Infrastructure\\Base.Infrastructure.csproj": {
-                "projectPath": "D:\\S\\BaseServices\\Infrastructure\\Base.Infrastructure.csproj"
+              "D:\\S\\BaseServices\\Infrastructure\\2.Base.Infrastructure.csproj": {
+                "projectPath": "D:\\S\\BaseServices\\Infrastructure\\2.Base.Infrastructure.csproj"
               },
-              "D:\\S\\BaseServices\\Service\\Base.Service.csproj": {
-                "projectPath": "D:\\S\\BaseServices\\Service\\Base.Service.csproj"
+              "D:\\S\\BaseServices\\Service\\3.Base.Service.csproj": {
+                "projectPath": "D:\\S\\BaseServices\\Service\\3.Base.Service.csproj"
               }
             }
           }
@@ -120,12 +180,12 @@
         }
       }
     },
-    "D:\\S\\BaseServices\\Core\\Base.Core.csproj": {
+    "D:\\S\\BaseServices\\Core\\1.Base.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\S\\BaseServices\\Core\\Base.Core.csproj",
-        "projectName": "Base.Core",
-        "projectPath": "D:\\S\\BaseServices\\Core\\Base.Core.csproj",
+        "projectUniqueName": "D:\\S\\BaseServices\\Core\\1.Base.Core.csproj",
+        "projectName": "1.Base.Core",
+        "projectPath": "D:\\S\\BaseServices\\Core\\1.Base.Core.csproj",
         "packagesPath": "C:\\Users\\mphob\\.nuget\\packages\\",
         "outputPath": "D:\\S\\BaseServices\\Core\\obj\\",
         "projectStyle": "PackageReference",
@@ -174,12 +234,12 @@
         }
       }
     },
-    "D:\\S\\BaseServices\\Infrastructure\\Base.Infrastructure.csproj": {
+    "D:\\S\\BaseServices\\Infrastructure\\2.Base.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\S\\BaseServices\\Infrastructure\\Base.Infrastructure.csproj",
-        "projectName": "Base.Infrastructure",
-        "projectPath": "D:\\S\\BaseServices\\Infrastructure\\Base.Infrastructure.csproj",
+        "projectUniqueName": "D:\\S\\BaseServices\\Infrastructure\\2.Base.Infrastructure.csproj",
+        "projectName": "2.Base.Infrastructure",
+        "projectPath": "D:\\S\\BaseServices\\Infrastructure\\2.Base.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\mphob\\.nuget\\packages\\",
         "outputPath": "D:\\S\\BaseServices\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
@@ -198,8 +258,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\S\\BaseServices\\Core\\Base.Core.csproj": {
-                "projectPath": "D:\\S\\BaseServices\\Core\\Base.Core.csproj"
+              "D:\\S\\BaseServices\\Base.DataContractCore\\4.Base.DataContractCore.csproj": {
+                "projectPath": "D:\\S\\BaseServices\\Base.DataContractCore\\4.Base.DataContractCore.csproj"
+              },
+              "D:\\S\\BaseServices\\Core\\1.Base.Core.csproj": {
+                "projectPath": "D:\\S\\BaseServices\\Core\\1.Base.Core.csproj"
               }
             }
           }
@@ -252,12 +315,12 @@
         }
       }
     },
-    "D:\\S\\BaseServices\\Service\\Base.Service.csproj": {
+    "D:\\S\\BaseServices\\Service\\3.Base.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\S\\BaseServices\\Service\\Base.Service.csproj",
-        "projectName": "Base.Service",
-        "projectPath": "D:\\S\\BaseServices\\Service\\Base.Service.csproj",
+        "projectUniqueName": "D:\\S\\BaseServices\\Service\\3.Base.Service.csproj",
+        "projectName": "3.Base.Service",
+        "projectPath": "D:\\S\\BaseServices\\Service\\3.Base.Service.csproj",
         "packagesPath": "C:\\Users\\mphob\\.nuget\\packages\\",
         "outputPath": "D:\\S\\BaseServices\\Service\\obj\\",
         "projectStyle": "PackageReference",
@@ -276,8 +339,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\S\\BaseServices\\Core\\Base.Core.csproj": {
-                "projectPath": "D:\\S\\BaseServices\\Core\\Base.Core.csproj"
+              "D:\\S\\BaseServices\\Core\\1.Base.Core.csproj": {
+                "projectPath": "D:\\S\\BaseServices\\Core\\1.Base.Core.csproj"
+              },
+              "D:\\S\\BaseServices\\Infrastructure\\2.Base.Infrastructure.csproj": {
+                "projectPath": "D:\\S\\BaseServices\\Infrastructure\\2.Base.Infrastructure.csproj"
               }
             }
           }

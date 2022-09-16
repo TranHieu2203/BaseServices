@@ -1,7 +1,7 @@
 using AutoMapper;
 using Core.Entities;
-using Core.Interfaces;
-using Service.DTO;
+using Infrastructure.Interfaces;
+using Core.DTO;
 using Service.Interface;
 using System;
 using System.Collections.Generic;

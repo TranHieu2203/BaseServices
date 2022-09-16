@@ -1,4 +1,5 @@
-﻿using Core.Interfaces;
+﻿using Base.DataContractCore.Base;
+using Infrastructure.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
@@ -10,6 +11,21 @@ using System.Threading.Tasks;
 
 namespace Infrastructure.Respository
 {
+    public static class OrderByMethod
+    {
+        public static IQueryable<T> OrderByColumn<T>(this IQueryable<T> q, string SortField)
+        {
+            Boolean isAscending = SortField.Substring(0, 1) == "-";
+            var param = Expression.Parameter(typeof(T), "p");
+            var prop = Expression.Property(param, isAscending ? SortField.Substring(1) : SortField);
+            var exp = Expression.Lambda(prop, param);
+
+            string method = isAscending ? "OrderByDescending" : "OrderBy";
+            Type[] types = new Type[] { q.ElementType, exp.Body.Type };
+            var mce = Expression.Call(typeof(Queryable), method, types, q.Expression, exp);
+            return q.Provider.CreateQuery<T>(mce);
+        }
+    }
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         protected BaseServicesContext _context;
@@ -34,7 +50,6 @@ namespace Infrastructure.Respository
         {
             return dbSet.Where(expression);
         }
-    
         public async Task<IEnumerable<T>> GetAll()
         {
             return await dbSet.ToListAsync();
@@ -61,6 +76,48 @@ namespace Infrastructure.Respository
         public Task<bool> Upsert(T entity)
         {
             throw new NotImplementedException();
+        }
+
+       
+        protected async Task<ResponseBaseList<T>> PageingList<T>(IQueryable<T> queryable, RequestBaseList request)
+        {
+            try
+            {
+                if (request.CURRENT_PAGE == 0)
+                {
+                    request.CURRENT_PAGE = 1;
+                }
+                if (request.PAGE_SIZE == -1)
+                {
+                    var data = await queryable.ToListAsync();
+                    return new ResponseBaseList<T>
+                    {
+                        LIST_DATA = data,
+                        TOTAL_ROW = data.Count
+                    };
+                }
+                else
+                {
+                    if (request.PAGE_SIZE == 0)
+                    {
+                        request.PAGE_SIZE = 20;
+                    }
+                    int skip = (request.CURRENT_PAGE - 1) * request.PAGE_SIZE;
+                    if (request.SORT != null)
+                    {
+                        queryable = queryable.OrderByColumn(request.SORT);
+                    }
+                    int count = await queryable.CountAsync();
+                    var query = queryable.Skip(skip).Take(request.PAGE_SIZE);
+                    var data = await query.ToListAsync();
+                    return new ResponseBaseList<T> { LIST_DATA = data, TOTAL_ROW = count };
+                }
+
+            }
+            catch (Exception ex)
+            {
+                return new ResponseBaseList<T> { };
+            }
         }
     }
 }
